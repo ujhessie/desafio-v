@@ -1,0 +1,61 @@
+
+
+input[type="date"] {
+    display: block;
+    position: relative;
+    /* padding:1rem 3.5rem 1rem 0.75rem; */
+    /* border-radius:50%; */
+
+    /* font-size: 1rem; */
+    /* font-family:monospace; */
+
+    border: 1px solid #3f3f46;
+    /* border-radius:1.25rem; */
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNhMWExYWEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1kYXlzIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHJlY3Qgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiB4PSIzIiB5PSI0IiByeD0iMiIvPjxwYXRoIGQ9Ik0zIDEwaDE4Ii8+PHBhdGggZD0iTTggMTRoLjAxIi8+PHBhdGggZD0iTTEyIDE0aC4wMSIvPjxwYXRoIGQ9Ik0xNiAxNGguMDEiLz48cGF0aCBkPSJNOCAxOGguMDEiLz48cGF0aCBkPSJNMTIgMThoLjAxIi8+PHBhdGggZD0iTTE2IDE4aC4wMSIvPjwvc3ZnPg==")
+        right 1rem center no-repeat;
+
+    cursor: pointer;
+}
+input[type="date"]:focus {
+    outline: none;
+    /* border-color: #3acfff; */
+    /* box-shadow: 0 0 0 0.25rem rgba(0, 120, 250, 0.1); */
+}
+
+/* '::-webkit-datetime-edit {
+}
+::-webkit-datetime-edit-fields-wrapper {
+}' */
+::-webkit-datetime-edit-month-field:hover,
+::-webkit-datetime-edit-day-field:hover,
+::-webkit-datetime-edit-year-field:hover {
+    background: rgba(0, 120, 250, 0.1);
+}
+::-webkit-datetime-edit-text {
+    opacity: 0;
+}
+::-webkit-clear-button,
+::-webkit-inner-spin-button {
+    display: none;
+}
+::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 2.5rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+    cursor: pointer;
+
+    color: white;
+    background: white;
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+    opacity: 0.05;
+}
+input[type="date"]:hover::-webkit-calendar-picker-indicator:hover {
+    opacity: 0.15;
+}

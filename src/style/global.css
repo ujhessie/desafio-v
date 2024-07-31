@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-transition {
+    transition: 100ms ease-in-out;
+}
+
+/* .cateorias-tarefas {
+    input[type="checkbox"]:checked ~ label {
+        bg-red
+    }
+} */
+
+/* styles.css */
+.categorias-tarefas input[type="checkbox"]:checked ~ label {
+    @apply bg-zinc-800;
+}
+
+

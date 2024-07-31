@@ -1,15 +1,11 @@
-import "./App.css";
+import { HomePage } from "./pages/HomePage/HomePage";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <>
-            <h1>Lista de participantes</h1>
-            <ol>
-                <li>Jesse Rodrigues</li>
-                {/* Coloca o nome aqui ó */}
-            </ol>
-        </>
+        <div>
+            <HomePage />
+        </div>
     );
-}
+};
 
 export default App;
